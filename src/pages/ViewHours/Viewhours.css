@@ -1,0 +1,340 @@
+.View-hour-main {
+  display: flex;
+  padding: 20px;
+}
+
+.viewhour-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.viewhour-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-white);
+  text-align: center;
+}
+
+.rbc-toolbar {
+  margin: 10px 0 !important;
+  gap: 10px;
+}
+
+.viewhour-section h1 {
+  font-size: var(--font-size-h1);
+  margin: 0;
+}
+
+.rbc-day-slot .rbc-event,
+.rbc-day-slot .rbc-background-event {
+  border: none !important;
+}
+
+.rbc-month-view {
+  border: 1px solid var(--neutral-light-gray);
+}
+
+.rbc-btn-group button {
+  padding: 10px 25px !important;
+  margin: 0 10px !important;
+  background-color: var(--primary-blue) !important;
+  color: var(--primary-white) !important;
+  border: none !important;
+}
+
+.rbc-button-link {
+  font-size: 16px;
+}
+
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  background-color: var(--primary-white) !important;
+  color: var(--primary-blue) !important;
+  border: 1px solid var(--primary-blue) !important;
+}
+
+.rbc-ellipsis,
+.rbc-show-more,
+.rbc-row-segment .rbc-event-content {
+  background-color: none !important;
+  border: 1px solid transparent !important;
+}
+
+.rbc-event-label {
+  display: none;
+}
+
+.rbc-events-container .rbc-event {
+  background-color: var(--neutral-dark-blue) !important;
+  /* height: max-content !important; */
+}
+
+.rbc-event,
+.rbc-day-slot .rbc-background-event {
+  padding: 2px !important;
+  border-radius: 4px !important;
+  width: 94%;
+  justify-content: center !important;
+  background-color: transparent !important;
+  margin: 3px 0;
+}
+
+.rbc-row-segment {
+  align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.rbc-date-cell {
+  padding: 5px;
+  text-align: center !important;
+}
+
+.rbc-event-content span {
+  font-size: var(--font-size-small) !important;
+}
+
+.Overtime-div {
+  background-color: var(--neutral-dark-blue);
+  padding: 3px;
+  border-radius: 4px !important;
+}
+
+.rbc-today {
+  background-color: var(--calender-today);
+}
+
+.rbc-off-range-bg {
+  background-color: var(--neutral-light-gray) !important;
+}
+
+.rbc-toolbar .rbc-toolbar-label {
+  font-size: var(--font-size-h3);
+}
+
+.rbc-btn-group > button:last-child:not(:first-child),
+.rbc-btn-group > button:first-child:not(:last-child) {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  margin: 0 !important;
+}
+
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  box-shadow: none !important;
+}
+
+.rbc-event {
+  font-size: var(--font-size-small);
+  padding: 4px !important;
+}
+
+.rbc-month-header {
+  background-color: var(--neutral-dark-blue);
+  color: var(--neutral-light-gray);
+}
+
+.rbc-event:hover {
+  background-color: var(--secondary-soft-gray);
+  cursor: pointer;
+}
+
+.rbc-day-slot .rbc-events-container {
+  margin-right: 0 !important;
+}
+
+.rbc-time-view .rbc-row {
+  min-height: max-content !important;
+}
+
+.rbc-header {
+  padding: 15px;
+}
+
+.rbc-current-time-indicator {
+  background-color: var(--primary-blue) !important;
+}
+
+.total-hours,
+.overtime {
+  font-weight: bold;
+  background-color: var(--alert-red);
+}
+
+/* .View-hour-main {
+  margin: 20px;
+} */
+
+.overtime-label {
+  font-size: var(--font-size-small);
+  margin-top: 7px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: var(--secondary-teal);
+}
+
+.overtime-info {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: var(--neutral-light-gray);
+}
+
+.indicate-color {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 18px;
+  justify-content: space-between;
+}
+
+.color-box {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 2px;
+}
+
+.black-box {
+  background-color: var(--neutral-dark-blue);
+}
+
+.green-box {
+  background-color: var(--secondary-teal);
+}
+
+.indicate-color p {
+  margin: 0px !important;
+  display: flex;
+  align-items: center;
+}
+
+.Calender-container {
+  height: 700px;
+}
+
+@media (max-width: 992px) {
+  .rbc-btn-group button {
+    padding: 7px 10px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* .View-hour-main {
+    margin: 20px;
+  } */
+
+  .week-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .week-header span {
+    font-size: 0.9em;
+  }
+
+  .weekly-overtime {
+    font-size: 0.8em;
+  }
+
+  .overtime-label {
+    font-size: 12px;
+  }
+
+  .overtime-info {
+    font-size: 1em;
+  }
+
+  .rbc-time-view {
+    width: 100%;
+  }
+
+  .rbc-calendar {
+    align-items: center;
+  }
+
+  .rbc-toolbar {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100%;
+  }
+
+  .Calender-container {
+    height: 600px;
+  }
+}
+
+@media (max-width: 575px) {
+  .rbc-toolbar {
+    flex-direction: column !important;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .rbc-event-content span {
+    font-size: 10px !important;
+  }
+
+  .overtime-label {
+    font-size: 10px;
+  }
+
+  .rbc-label {
+    padding: 2px !important;
+    font-size: 12px;
+  }
+
+  .rbc-header {
+    padding: 3px !important;
+  }
+
+  .rbc-btn-group {
+    margin: 5px !important;
+  }
+
+  .viewhour-section {
+    font-size: var(--font-size-small);
+    padding: 10px 0px;
+  }
+
+  .indicate-color p {
+    font-size: 10px;
+  }
+
+  .viewhour-section h2 {
+    font-size: 16px;
+  }
+
+  .rbc-toolbar .rbc-toolbar-label {
+    font-size: var(--font-size-small);
+  }
+
+  .rbc-btn-group button {
+    padding: 7px 10px !important;
+    font-size: 10px !important;
+  }
+
+  .rbc-event {
+    font-size: 10px !important;
+  }
+
+  .rbc-button-link {
+    font-size: 10px;
+  }
+
+  /* .View-hour-main {
+    margin: 5px 20px !important;
+  } */
+
+  .color-box {
+    width: 10px;
+    height: 10px;
+  }
+
+  .Calender-container {
+    height: 450px;
+  }
+}

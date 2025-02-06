@@ -1,0 +1,160 @@
+.timesheet-list-container {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 20px;
+  /* height: 85vh; */
+  /* max-width: 800px; */
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.timesheet-title h2 {
+  margin: 10px;
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.location-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0px;
+  /* border-radius: 4px; */
+  border: 1px solid var(--secondary-soft-gray);
+  scrollbar-width: thin;
+}
+
+.location-table th,
+.location-table td {
+  padding: 20px 10px;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--secondary-soft-gray);
+}
+
+.location-table th {
+  background-color: var(--neutral-dark-blue);
+  color: var(--neutral-light-gray);
+}
+
+.location-action-button {
+  cursor: pointer;
+  color: var(--primary-blue);
+}
+
+.location-dropdown-menu {
+  max-width: 300px;
+  overflow: hidden;
+  position: absolute;
+  left: -50px;
+  background: var(--primary-white);
+  border: 1px solid var(--secondary-soft-gray);
+  box-shadow: 0 4px 8px var(--sidebar-bg);
+  padding: 10px;
+  z-index: 10;
+}
+
+.location-dropdown-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.location-dropdown-menu button:hover {
+  background: var(--neutral-light-gray);
+}
+
+.locationlist-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.locationlist-action button:hover {
+  background-color: var(--blue-hover);
+}
+
+.location-action-icon {
+  margin-right: 10px;
+  font-size: var(--font-size-small);
+}
+
+.location-dropdown-container {
+  position: relative;
+}
+
+.location-dropdown-menu {
+  position: absolute;
+  background: white;
+  border: 1px solid var(--secondary-soft-gray);
+  box-shadow: 0 4px 8px var(--sidebar-bg);
+  padding: 10px;
+  z-index: 10;
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .location-table {
+    overflow-y: auto;
+  }
+
+  .location-table td {
+    padding: 16px;
+  }
+
+  .location-dropdown-menu {
+    left: -15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .location-dropdown-menu {
+    left: -45px;
+    padding: 8px;
+  }
+
+  .location-table th,
+  .location-table td {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .locationlist-action button {
+    padding: 9px 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .location-dropdown-menu {
+    white-space: nowrap;
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .location-dropdown-menu button {
+    padding: 5px;
+  }
+
+  .location-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .location-table th,
+  .location-table td {
+    white-space: nowrap;
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .locationlist-action button {
+    padding: 6px 10px !important;
+  }
+
+  .timesheet-title h2 {
+    font-size: 16px;
+  }
+}

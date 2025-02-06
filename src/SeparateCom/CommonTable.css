@@ -1,0 +1,114 @@
+.common-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0px;
+  /* border-radius: 4px; */
+  scrollbar-width: thin;
+  border: 1px solid var(--neutral-light-gray);
+}
+
+.common-table th,
+.common-table td {
+  padding: 15px 8px;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--neutral-light-gray);
+}
+
+.common-table th {
+  background-color: var(--neutral-dark-blue);
+  color: var(--neutral-light-gray);
+}
+
+.dropdown-container {
+  font-size: 15px;
+  padding: 5px;
+  /* border-radius: 50px; */
+  color: var(--primary-blue);
+}
+
+.dropdown-menu button {
+  display: block;
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background: var(--neutral-light-gray);
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: -50px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 10;
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .common-table {
+    overflow-y: auto;
+  }
+
+  .common-table td {
+    padding: 16px;
+  }
+
+  .employeecontract-title {
+    gap: 5px;
+  }
+
+  .company-dropdown-menu {
+    left: -15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dropdown-menu {
+    left: -45px;
+    padding: 8px;
+  }
+
+  .common-table th,
+  .common-table td {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+  .common-table td {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .dropdown-menu {
+    white-space: nowrap;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .dropdown-menu button {
+    padding: 5px;
+  }
+
+  .common-table th,
+  .common-table td {
+    white-space: nowrap;
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .common-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

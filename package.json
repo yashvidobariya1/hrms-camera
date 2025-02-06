@@ -1,0 +1,60 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.5.0",
+    "@zxing/library": "^0.21.3",
+    "axios": "^1.7.9",
+    "cra-template": "1.2.0",
+    "html2canvas": "^1.4.1",
+    "html5-qrcode": "^2.3.8",
+    "jspdf": "^2.5.2",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.46",
+    "qr-scanner": "^1.4.2",
+    "react": "^18.3.1",
+    "react-big-calendar": "^1.17.1",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^18.3.1",
+    "react-dropzone": "^14.3.5",
+    "react-feather": "^2.0.10",
+    "react-icon": "^1.0.0",
+    "react-icons": "^5.4.0",
+    "react-qr-barcode-scanner": "^2.0.0",
+    "react-qr-code": "^2.0.15",
+    "react-qr-scanner": "^1.0.0-alpha.11",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.1.0",
+    "react-router-dom": "^7.1.0",
+    "react-scanner": "^1.2.0",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^11.0.2",
+    "react-webcam": "^7.2.0",
+    "redux-persist": "^6.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

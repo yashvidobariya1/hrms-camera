@@ -1,0 +1,151 @@
+.Addleave-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+
+.addleave-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--neutral-light-gray);
+}
+
+.addleave-radio-flex {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.pension-contract label,
+.pension-contract input {
+  margin: 0px !important;
+}
+
+.leave-save-button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--primary-blue);
+  color: var(--secondary-soft-gray);
+  /* border-radius: 5px; */
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  margin: 30px 0;
+}
+
+.leave-save-button:hover {
+  background-color: var(--blue-hover);
+}
+
+.addlocation-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--neutral-light-gray);
+}
+
+.Addleave-section {
+  width: 100%;
+  gap: 10px;
+}
+
+.pension-contract {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.addleave-input-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 20px 0px;
+}
+
+.location-approval-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.location-approval-link input {
+  margin: 0;
+}
+
+.checkbox-country {
+  cursor: pointer;
+}
+
+.addlocation-note p {
+  color: var(--alert-yellow);
+  font-weight: 400;
+}
+
+.date-input-flex {
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
+.date-group {
+  width: 50%;
+}
+
+.addleave-input-flex {
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid var(--neutral-light-gray);
+}
+
+.pension-leave {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.calculated-days {
+  margin: 5px 0;
+}
+
+@media (max-width: 575px) {
+  .Addleave-section {
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 7px;
+  }
+
+  .addleave-input-container {
+    margin-top: 10px;
+    gap: 0;
+  }
+
+  .addleave-radio-flex {
+    gap: 5px !important;
+    display: grid;
+    padding: 0 10px;
+  }
+
+  .pension-contract {
+    width: 50%;
+  }
+
+  .save-button {
+    margin: 15px 0;
+  }
+
+  .date-input-flex {
+    flex-direction: column;
+  }
+
+  .date-group,
+  .addleave-input-flex {
+    width: 100%;
+  }
+
+  .pension-leave {
+    gap: 1px;
+  }
+}
