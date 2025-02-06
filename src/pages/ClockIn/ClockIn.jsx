@@ -170,7 +170,8 @@ const CheckIn = () => {
 
       setTimeout(() => {
         navigator.mediaDevices
-          .getUserMedia({ video: true })
+          // .getUserMedia({ video: true })
+          .getUserMedia({ video: { facingMode: "environment" } })
           .then((stream) => {
             console.log("Camera access granted.");
             const scannerInstance = new Html5QrcodeScanner("scanner-visible", {
