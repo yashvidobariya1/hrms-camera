@@ -260,7 +260,8 @@ const CheckIn = () => {
 
   const startTimer = (start) => {
     const interval = setInterval(() => {
-      setElapsedTime(Math.floor((Date.now() - start.getTime()) / 1000));
+      const elapsedSeconds = moment().diff(start, "seconds"); // Get elapsed time in seconds
+      setElapsedTime(elapsedSeconds);
     }, 1000);
     setTimerInterval(interval);
   };
@@ -268,15 +269,15 @@ const CheckIn = () => {
   useEffect(() => {
     // console.log("ismobile==>", isMobile);
     const savedStartTime = localStorage.getItem("startTime");
-    const savedElapsedTime = localStorage.getItem("elapsedTime");
+    const savedElapsedTime = Number(localStorage.getItem("elapsedTime")) || 0;
     const savedTotalWorkingTime =
       Number(localStorage.getItem("totalWorkingTime")) || 0;
 
     if (savedStartTime) {
       const savedTime = moment(savedStartTime);
-      const currentElapsed =
-        Math.floor((Date.now() - savedTime.getTime()) / 1000) +
-        Number(savedElapsedTime || 0);
+      const currentElapsed = savedTime.isValid()
+        ? savedTime.diff(moment(), "seconds") + savedElapsedTime
+        : savedElapsedTime;
       setStartTime(savedTime);
       setElapsedTime(currentElapsed);
       startTimer(savedTime);
